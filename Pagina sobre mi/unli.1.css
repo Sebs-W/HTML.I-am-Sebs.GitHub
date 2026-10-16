@@ -1,0 +1,88 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1,6;
+    color: cadetblue;
+    background-color: rgb(132, 228, 21);
+}
+
+*,* ::before, *::after {
+    box-sizing:border-box ;
+    margin: 0;
+    padding: 0;
+}
+.layout-container{
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5.6;
+    
+}
+
+
+.main-header{
+    background-color: rgb(19, 18, 18);
+    border: none;
+    text-align: right;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.header-logo{
+    text-align: left;
+    border: none;
+    font-size: 2.4rem;
+    font-weight:700 ;
+    color: white;
+    margin-right:290px;
+}
+.header-img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+    
+}
+.content-area {
+    text-align: start;
+    border: 0cap;   
+}
+.card{ 
+    border-radius: 2px;
+    text-align: start;
+    padding: 20px;
+    background: rgb(247, 247, 247);
+    border-bottom: 20px;
+
+}
+.btn-action {
+    border-radius: 10px;
+    color: rgb(246, 246, 247);
+    background-color: rgb(62, 7, 244);
+    text-align:left;
+    padding: 12px ;
+    cursor: pointer;
+}
+.sidebar-area  {
+    padding: 10px;
+    text-decoration: none;
+    margin-left: 700px;
+    background: rgb(243, 242, 242);
+}
+.sidebar-area ul {
+    list-style: none;
+}
+.sidebar-area li {
+    margin-bottom: 12px;
+}
+.main-footer {
+    text-align: center;
+    background-color: black;
+    color: rgb(245, 240, 240);
+    border: 10px;
+    padding: 20px;
+    margin-top: 40px;
+}

@@ -1,0 +1,85 @@
+.caja_animada {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(16, 226, 226);
+    margin: 50px auto;
+
+/*Propiedad: nombre, Duracion; Ritmo; Repeticion*/
+    animation: Mianimacion 3s ease-in-out infinite alternate
+}
+    @keyframes Mianimacion {
+        0% {transform: scale(1) rotate(0deg);
+            background-color: rgb(155, 3, 155);
+            border-radius: 0%;
+    }
+    0%{
+        transform: scale(1) rotate(0%);  
+        background-color: brown;
+        border-radius: 0%;
+    }
+    50%{
+        background-color: chartreuse;
+        border-radius: 50%;
+    }
+    100%{
+        transform: scale(1.2)  rotate(360deg);
+        background-color: darksalmon;
+        border-radius: 0%;
+    }
+    }
+.boton-brillo{
+    padding: 15px 30px;
+    font-size: 16px;
+    color: rgb(10, 22, 34);
+    border: none;
+    border-radius: 5%;
+    cursor: pointer;
+    background: linear-gradient(90deg, blue, red, blue); 
+    background-size: 200% auto;
+    }
+
+    .boton-brillo:hover{
+        animation: brillar 1.5s linear infinite;
+    }
+    @keyframes brillar {
+        0% {background-position: 0% center;}
+        100% {background-position: 200% center;}
+    }
+
+.loader{
+    border: 5px solid;
+    width: 50px;
+    height: 50px;
+    border-top: 5px solid rgb(155, 3, 155);
+    border-radius: 50%;
+    animation: girar 1.5s linear infinite;
+}
+@keyframes girar { 
+    from { transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+    
+}
+
+.tarjeta{
+    width: 280px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(81, 180, 180, 0.1);
+    background-color: brown;
+    
+    animation-name: aparecersubiendo;
+    animation-duration: 0.8s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32,);
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes aparecersubiendo {
+    0% {
+        opacity: 0;
+        transform: translate(60px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}

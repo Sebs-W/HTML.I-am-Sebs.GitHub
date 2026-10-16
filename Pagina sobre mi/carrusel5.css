@@ -1,0 +1,83 @@
+.carousel5{
+            width:900px;
+            height:600px;
+            overflow:hidden;
+            margin:40px auto;
+            position: relative;
+            border-radius: 12px;
+            border:10px solid #151514;
+        }
+        .slides6 {
+            display: flex;
+            width:100%; /* 4 imágenes */
+            animation: autoSlide 5s infinite;
+        }
+        .slide28{
+            width:100%;
+            flex-shrink:0;
+        }
+        .slide28 img{
+            width:100%;
+            height:600px;
+            object-fit:cover;
+        }
+        @keyframes autoSlide {
+            0%{transform:translateX(0%);}
+            20%{transform:translateX(0%);}
+            25%{transform:translateX(-100%);}
+            45%{transform:translateX(-100%);}
+            50%{transform:translateX(-200%);}
+            70%{transform:translateX(-200%);}
+            75%{transform:translateX(-300%);}
+            95%{transform:translateX(-300%);}
+            100%{transform:translateX(0%);}
+        }
+        .arrows{
+            position: absolute;
+            top:50%;
+            width:100%;
+            display:flex;
+            justify-content: space-between;
+            transform:translateY(-50%);
+            z-index:2;
+        }
+        .arrows span {
+            font-size:30px;
+            background: rgb(248, 245, 245);
+            color:#131313;
+            padding:10px;
+            border-radius:50%;
+            cursor:pointer;
+            user-select:none;
+        }
+        input[type="radio"]{
+            display:none;
+        }
+        /* Al hacer clic se detiene la animación automática */
+        #slide5-1:checked ~ .slides6 { animation:none; transform: translateX(0%); }
+        #slide5-2:checked ~ .slides6 { animation:none; transform: translateX(-100%); }
+        #slide5-3:checked ~ .slides6 { animation:none; transform: translateX(-200%); }
+        #slide5-4:checked ~ .slides6 { animation:none; transform: translateX(-300%); }
+        .nav-buttons {
+            position:absolute;
+            bottom:10px;
+            width:100%;
+            text-align:center;
+        }
+        .nav-buttons label{
+            cursor:pointer;
+            display: inline-block;
+            width:10px;
+            height:10px;
+            margin: 5px;
+            background:#ffc400;
+            border-radius:50%;
+            border:8px solid #ff0000;
+}
+
+body {
+   background-color: #0400ff;
+   color: #fffb00;
+   text-align: center;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio personal de desarrollo web y tecnología.">
+  <title>Mi portafolio | Desarrollo web</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbarPrincipal" data-bs-smooth-scroll="true" tabindex="0">
+  <!-- BARRA DE NAVEGACIÓN -->
+  <nav id="navbarPrincipal" class="navbar navbar-expand-lg navbar-dark fixed-top nav-personalizada">
+    <div class="container">
+      <a class="navbar-brand marca" href="#inicio"><span class="marca-icono">&lt;/&gt;</span> MiPortafolio<span class="punto">.</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion" aria-controls="menuNavegacion" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuNavegacion">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+          <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#articulos">Artículos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
+          <li class="nav-item ms-lg-2"><a class="btn btn-nav" href="#contacto">Hablemos <i class="bi bi-arrow-up-right"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- INICIO / PRESENTACIÓN -->
+    <section id="inicio" class="hero seccion-oscura">
+      <div class="hero-luz luz-uno"></div><div class="hero-luz luz-dos"></div>
+      <div class="container position-relative">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7 hero-contenido">
+            <span class="etiqueta"><span class="estado-punto"></span> DISPONIBLE PARA NUEVOS PROYECTOS</span>
+            <p class="saludo mt-4 mb-2">¡Hola! Soy</p>
+            <h1 class="hero-titulo">Tu nombre <span class="texto-gradiente">aquí.</span></h1>
+            <h2 class="hero-subtitulo">Estudiante de tecnología y <span>desarrollo web</span></h2>
+            <p class="hero-descripcion">Me gusta crear experiencias digitales modernas, funcionales y fáciles de usar. Este es mi espacio para mostrar lo que aprendo y los proyectos que desarrollo.</p>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a href="#proyectos" class="btn btn-principal">Ver mis proyectos <i class="bi bi-arrow-right ms-2"></i></a>
+              <a href="#contacto" class="btn btn-secundario">Contactarme <i class="bi bi-chat-dots ms-2"></i></a>
+            </div>
+            <div class="hero-redes mt-5">
+              <span>Encuéntrame en</span>
+              <a href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="bi bi-github"></i></a>
+              <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="perfil-marco">
+              <div class="perfil-orbita orbita-uno"></div><div class="perfil-orbita orbita-dos"></div>
+              <div class="perfil-tarjeta">
+                <div class="perfil-avatar"><i class="bi bi-person-workspace"></i></div>
+                <span class="perfil-mini-etiqueta">PORTAFOLIO PERSONAL</span>
+                <h3>Ideas que se convierten en proyectos</h3>
+                <p>Aprender · Diseñar · Crear</p>
+                <div class="perfil-pie"><span><i class="bi bi-code-slash"></i> HTML / CSS / Bootstrap</span><span class="perfil-check"><i class="bi bi-check-lg"></i></span></div>
+              </div>
+              <div class="flotante flotante-codigo"><i class="bi bi-braces"></i><span>Código limpio</span></div>
+              <div class="flotante flotante-creativo"><i class="bi bi-lightning-charge-fill"></i><span>Creatividad</span></div>
+            </div>
+          </div>
+        </div>
+        <a href="#sobre-mi" class="bajar" aria-label="Desplazarse a Sobre mí"><i class="bi bi-arrow-down"></i></a>
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi" class="seccion seccion-clara">
+      <div class="container">
+        <div class="encabezado-seccion"><span class="sobrelinea">CONÓCEME</span><h2>Un poco <span class="texto-gradiente">sobre mí</span></h2><p>Me interesa la tecnología y siempre busco aprender algo nuevo.</p></div>
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5">
+            <div class="sobre-visual"><div class="sobre-cuadro"><i class="bi bi-laptop"></i><span>Aprender haciendo</span></div><div class="sobre-sello"><i class="bi bi-stars"></i><strong>100%</strong><small>curiosidad</small></div></div>
+          </div>
+          <div class="col-lg-7">
+            <h3 class="subtitulo-seccion">¡Hola de nuevo! Me encanta resolver problemas con tecnología.</h3>
+            <p class="texto-suave">Estoy construyendo mis habilidades en programación y diseño web. Disfruto transformar ideas en páginas claras, atractivas y útiles, mientras sigo mejorando con cada práctica.</p>
+            <p class="texto-suave">Mi objetivo es continuar creciendo profesionalmente, participar en proyectos reales y, con el tiempo, crear mis propias soluciones digitales.</p>
+            <div class="row g-3 datos-personales mt-3">
+              <div class="col-sm-6"><div class="dato"><i class="bi bi-person"></i><div><small>Nombre</small><strong>Tu nombre aquí</strong></div></div></div>
+              <div class="col-sm-6"><div class="dato"><i class="bi bi-mortarboard"></i><div><small>Área de estudio</small><strong>Computación e Informática</strong></div></div></div>
+              <div class="col-sm-6"><div class="dato"><i class="bi bi-geo-alt"></i><div><small>Ubicación</small><strong>Perú</strong></div></div></div>
+              <div class="col-sm-6"><div class="dato"><i class="bi bi-envelope"></i><div><small>Correo</small><strong>tu-correo@ejemplo.com</strong></div></div></div>
+            </div>
+            <a class="btn btn-principal mt-4" href="#contacto">Conversemos <i class="bi bi-arrow-up-right ms-2"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCIA Y HABILIDADES -->
+    <section id="experiencia" class="seccion seccion-oscura">
+      <div class="container">
+        <div class="encabezado-seccion encabezado-claro"><span class="sobrelinea">MI CAMINO</span><h2>Experiencia y <span class="texto-gradiente">habilidades</span></h2><p>Conocimientos que voy desarrollando paso a paso.</p></div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4"><article class="tarjeta-experiencia"><div class="icono-tarjeta"><i class="bi bi-window"></i></div><span class="tarjeta-fecha">APRENDIZAJE</span><h3>Desarrollo web</h3><p>Creación de páginas web con estructura HTML, estilos CSS y componentes interactivos.</p><div class="etiquetas"><span>HTML5</span><span>CSS3</span><span>Responsive</span></div></article></div>
+          <div class="col-md-6 col-lg-4"><article class="tarjeta-experiencia"><div class="icono-tarjeta"><i class="bi bi-grid-1x2"></i></div><span class="tarjeta-fecha">APRENDIZAJE</span><h3>Bootstrap</h3><p>Uso de contenedores, filas, columnas, tarjetas, navegación y componentes adaptables.</p><div class="etiquetas"><span>Bootstrap 5</span><span>Grid</span><span>Componentes</span></div></article></div>
+          <div class="col-md-6 col-lg-4"><article class="tarjeta-experiencia"><div class="icono-tarjeta"><i class="bi bi-terminal"></i></div><span class="tarjeta-fecha">APRENDIZAJE</span><h3>Programación</h3><p>Práctica de lógica, algoritmos, estructuras condicionales y resolución de ejercicios.</p><div class="etiquetas"><span>JavaScript</span><span>Python</span><span>Lógica</span></div></article></div>
+        </div>
+        <div class="habilidades-panel mt-5"><div class="row align-items-center g-4"><div class="col-lg-4"><h3>Herramientas que utilizo</h3><p>Mi caja de herramientas para aprender y construir.</p></div><div class="col-lg-8"><div class="row g-3">
+          <div class="col-6 col-md-4"><div class="habilidad"><i class="bi bi-filetype-html"></i><span>HTML5</span></div></div>
+          <div class="col-6 col-md-4"><div class="habilidad"><i class="bi bi-filetype-css"></i><span>CSS3</span></div></div>
+          <div class="col-6 col-md-4"><div class="habilidad"><i class="bi bi-bootstrap-fill"></i><span>Bootstrap</span></div></div>
+          <div class="col-6 col-md-4"><div class="habilidad"><i class="bi bi-filetype-js"></i><span>JavaScript</span></div></div>
+          <div class="col-6 col-md-4"><div class="habilidad"><i class="bi bi-code-square"></i><span>VS Code</span></div></div>
+          <div class="col-6 col-md-4"><div class="habilidad"><i class="bi bi-git"></i><span>Git / GitHub</span></div></div>
+        </div></div></div></div>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="seccion seccion-clara">
+      <div class="container">
+        <div class="encabezado-seccion"><span class="sobrelinea">TRABAJOS</span><h2>Proyectos <span class="texto-gradiente">destacados</span></h2><p>Ejemplos de proyectos que puedes adaptar y reemplazar por tus trabajos reales.</p></div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4"><article class="proyecto-card"><div class="proyecto-imagen proyecto-tienda"><div class="mini-ventana"><div class="mini-barra"><i></i><i></i><i></i></div><div class="mini-titulo">URBAN<span>STORE</span></div><div class="mini-productos"><b></b><b></b><b></b></div></div><span class="proyecto-numero">01</span></div><div class="proyecto-cuerpo"><span class="proyecto-categoria">DISEÑO WEB</span><h3>Tienda de ropa</h3><p>Diseño de una tienda visual para mostrar productos, categorías y promociones.</p><div class="proyecto-pie"><div class="etiquetas etiquetas-claras"><span>HTML</span><span>CSS</span><span>Bootstrap</span></div><a href="#contacto" aria-label="Consultar sobre tienda de ropa"><i class="bi bi-arrow-up-right"></i></a></div></div></article></div>
+          <div class="col-md-6 col-lg-4"><article class="proyecto-card"><div class="proyecto-imagen proyecto-inventario"><div class="panel-dashboard"><div class="dashboard-lateral"><b></b><b></b><b></b><b></b></div><div class="dashboard-contenido"><small>RESUMEN</small><div class="dashboard-cajas"><b></b><b></b><b></b></div><div class="dashboard-grafico"><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div><span class="proyecto-numero">02</span></div><div class="proyecto-cuerpo"><span class="proyecto-categoria">SISTEMA WEB</span><h3>Panel de inventario</h3><p>Interfaz para organizar productos, revisar existencias y presentar datos.</p><div class="proyecto-pie"><div class="etiquetas etiquetas-claras"><span>PHP</span><span>MySQL</span><span>CSS</span></div><a href="#contacto" aria-label="Consultar sobre panel de inventario"><i class="bi bi-arrow-up-right"></i></a></div></div></article></div>
+          <div class="col-md-6 col-lg-4"><article class="proyecto-card"><div class="proyecto-imagen proyecto-portafolio"><div class="portafolio-muestra"><div class="portafolio-circulo"><i class="bi bi-person"></i></div><b>Diseña tu futuro.</b><span>Ideas · Código · Creatividad</span><div class="portafolio-lineas"><i></i><i></i><i></i></div></div><span class="proyecto-numero">03</span></div><div class="proyecto-cuerpo"><span class="proyecto-categoria">PORTAFOLIO</span><h3>Página personal</h3><p>Un sitio personal para presentar habilidades, experiencia y formas de contacto.</p><div class="proyecto-pie"><div class="etiquetas etiquetas-claras"><span>HTML</span><span>CSS</span><span>JS</span></div><a href="#contacto" aria-label="Consultar sobre página personal"><i class="bi bi-arrow-up-right"></i></a></div></div></article></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARTÍCULOS -->
+    <section id="articulos" class="seccion seccion-suave">
+      <div class="container">
+        <div class="encabezado-seccion"><span class="sobrelinea">RECURSOS</span><h2>Artículos para <span class="texto-gradiente">seguir aprendiendo</span></h2><p>Enlaces útiles para continuar aprendiendo desarrollo web.</p></div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4"><article class="articulo-card"><div class="articulo-icono articulo-violeta"><i class="bi bi-bootstrap-fill"></i></div><div class="articulo-meta"><span><i class="bi bi-book"></i> Documentación</span><span>01</span></div><h3>Primeros pasos con Bootstrap</h3><p>Conoce el sistema de cuadrícula, los componentes y las utilidades de Bootstrap.</p><a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank" rel="noreferrer" class="enlace-articulo">Leer documentación <i class="bi bi-arrow-up-right"></i></a></article></div>
+          <div class="col-md-6 col-lg-4"><article class="articulo-card"><div class="articulo-icono articulo-azul"><i class="bi bi-filetype-html"></i></div><div class="articulo-meta"><span><i class="bi bi-book"></i> Guía de estudio</span><span>02</span></div><h3>Fundamentos de HTML</h3><p>Aprende a organizar el contenido de una página con etiquetas semánticas.</p><a href="https://developer.mozilla.org/es/docs/Learn_web_development/Core/Structuring_content" target="_blank" rel="noreferrer" class="enlace-articulo">Leer guía <i class="bi bi-arrow-up-right"></i></a></article></div>
+          <div class="col-md-6 col-lg-4"><article class="articulo-card"><div class="articulo-icono articulo-verde"><i class="bi bi-palette"></i></div><div class="articulo-meta"><span><i class="bi bi-book"></i> Guía de estudio</span><span>03</span></div><h3>Diseño con CSS</h3><p>Explora colores, tipografía, distribución y diseño adaptable a distintos dispositivos.</p><a href="https://developer.mozilla.org/es/docs/Learn_web_development/Core/Styling_basics" target="_blank" rel="noreferrer" class="enlace-articulo">Leer guía <i class="bi bi-arrow-up-right"></i></a></article></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section id="testimonios" class="seccion seccion-oscura">
+      <div class="container">
+        <div class="encabezado-seccion encabezado-claro"><span class="sobrelinea">OPINIONES</span><h2>Lo que dicen <span class="texto-gradiente">de mi trabajo</span></h2><p>Testimonios de ejemplo: reemplázalos por opiniones reales si las tienes.</p></div>
+        <div id="carruselTestimonios" class="carousel slide carrusel-testimonios" data-bs-ride="carousel" data-bs-interval="6500">
+          <div class="carousel-indicators"><button type="button" data-bs-target="#carruselTestimonios" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Testimonio 1"></button><button type="button" data-bs-target="#carruselTestimonios" data-bs-slide-to="1" aria-label="Testimonio 2"></button><button type="button" data-bs-target="#carruselTestimonios" data-bs-slide-to="2" aria-label="Testimonio 3"></button></div>
+          <div class="carousel-inner">
+            <div class="carousel-item active"><div class="testimonio"><i class="bi bi-quote comillas"></i><p>“Demuestra ganas de aprender, creatividad y compromiso para mejorar cada proyecto.”</p><div class="testimonio-persona"><div class="testimonio-avatar">A</div><div><strong>Alex Ejemplo</strong><small>Compañero de estudios</small></div></div></div></div>
+            <div class="carousel-item"><div class="testimonio"><i class="bi bi-quote comillas"></i><p>“Tiene buena disposición para resolver problemas y colaborar cuando se trabaja en equipo.”</p><div class="testimonio-persona"><div class="testimonio-avatar">M</div><div><strong>María Ejemplo</strong><small>Compañera de proyecto</small></div></div></div></div>
+            <div class="carousel-item"><div class="testimonio"><i class="bi bi-quote comillas"></i><p>“Se esfuerza por aprender nuevas herramientas y aplicar lo aprendido en sus prácticas.”</p><div class="testimonio-persona"><div class="testimonio-avatar">J</div><div><strong>Juan Ejemplo</strong><small>Docente o mentor</small></div></div></div></div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carruselTestimonios" data-bs-slide="prev" aria-label="Anterior"><span class="carousel-control-prev-icon"></span></button><button class="carousel-control-next" type="button" data-bs-target="#carruselTestimonios" data-bs-slide="next" aria-label="Siguiente"><span class="carousel-control-next-icon"></span></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="seccion seccion-clara contacto-seccion">
+      <div class="container"><div class="contacto-panel"><div class="contacto-decoracion"></div><div class="row align-items-center g-4 position-relative"><div class="col-lg-7"><span class="sobrelinea">¿TIENES UNA IDEA?</span><h2>¡Hagamos algo <span class="texto-gradiente">increíble juntos!</span></h2><p>Si quieres conversar sobre tecnología, proyectos o nuevas oportunidades, puedes escribirme.</p><a class="btn btn-principal" href="mailto:tu-correo@ejemplo.com">Enviar un correo <i class="bi bi-envelope-arrow-up ms-2"></i></a></div><div class="col-lg-5"><div class="contacto-datos"><a href="mailto:tu-correo@ejemplo.com"><i class="bi bi-envelope"></i><span><small>Correo electrónico</small><strong>tu-correo@ejemplo.com</strong></span><i class="bi bi-arrow-up-right ms-auto"></i></a><a href="https://github.com/" target="_blank" rel="noreferrer"><i class="bi bi-github"></i><span><small>Proyectos y código</small><strong>Mi perfil de GitHub</strong></span><i class="bi bi-arrow-up-right ms-auto"></i></a></div></div></div></div></div>
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="footer seccion-oscura"><div class="container"><div class="footer-superior"><a class="navbar-brand marca" href="#inicio"><span class="marca-icono">&lt;/&gt;</span> MiPortafolio<span class="punto">.</span></a><p>Construido con curiosidad, práctica y Bootstrap.</p><div class="footer-redes"><a href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="bi bi-github"></i></a><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a><a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram"><i class="bi bi-instagram"></i></a></div></div><div class="footer-inferior"><span>© <span id="anioActual">2026</span> MiPortafolio. Todos los derechos reservados.</span><a href="#inicio">Volver arriba <i class="bi bi-arrow-up"></i></a></div></div></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Actualiza automáticamente el año del pie de página.
+    document.getElementById('anioActual').textContent = new Date().getFullYear();
+
+    // Cierra el menú móvil cuando se selecciona una sección.
+    document.querySelectorAll('#menuNavegacion .nav-link, #menuNavegacion .btn-nav').forEach(function (enlace) {
+      enlace.addEventListener('click', function () {
+        const menu = document.getElementById('menuNavegacion');
+        if (menu.classList.contains('show')) {
+          bootstrap.Collapse.getOrCreateInstance(menu).hide();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
